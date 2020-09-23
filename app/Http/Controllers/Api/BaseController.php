@@ -14,12 +14,11 @@ class BaseController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function sendResponse($result, $message)
+    public function sendResponse($result)
     {
-        return ResponseBuilder::asSuccess()
+        return ResponseBuilder::asSuccess(Response::HTTP_OK)
                ->withData($result)
                ->withHttpCode(Response::HTTP_OK)
-               ->withMessage($message)
                ->build();
     }
 
@@ -35,10 +34,9 @@ class BaseController extends Controller
             $response['data'] = $errorMessages;
         }
 
-        return ResponseBuilder::asError()
+        return ResponseBuilder::asError($code)
                ->withData($errorMessages)
                ->withHttpCode($code)
-               ->withMessage($message)
                ->build();
     }
 }

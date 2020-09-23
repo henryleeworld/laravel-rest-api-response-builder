@@ -1,4 +1,4 @@
-# Laravel 6 具象狀態傳輸應用程式介面回應建構器
+# Laravel 8 具象狀態傳輸應用程式介面回應建構器
 
 引入 MarcinOrlowski 的 laravel-api-response-builder 套件來擴增實作一組實現效率、可讀性、還有可擴展分散式系統的軟體架構設計規範，符合具象狀態傳輸原則的系統有五個主要特性/限制：伺服器/客戶端分離、無狀態、可快取、分層、統一操作介面。
 
@@ -20,7 +20,7 @@ $ php artisan key:generate
 ```sh
 $ php artisan migrate
 ```
-- 執行 __Artisan__ 指令的 __passport:install__ 會建立用來產生安全 Access Token 的加密金鑰。此外，該指令會建立用於產生 Access Token 的「個人存取」與「密碼授權」的客戶端。
+- 執行 __Artisan__ 指令的 __passport:install__ 會建立用來產生安全存取權杖的加密金鑰。此外，該指令會建立用於產生存取權杖的「個人存取」與「密碼授權」的客戶端。
 ```sh
 $ php artisan passport:install
 ```
@@ -29,8 +29,8 @@ $ php artisan passport:install
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/UnPCMrc.png)
+![](https://i.imgur.com/JtJDfDr.png)
 > 傳送 HTML 表單資料註冊建立使用者
 
-![](https://i.imgur.com/mXpWp8z.png)
+![](https://i.imgur.com/vbk4CTv.png)
 > 傳送 HTML 表單資料使用建立使用者來做登入
