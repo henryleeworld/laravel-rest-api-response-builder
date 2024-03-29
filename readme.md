@@ -1,6 +1,6 @@
-# Laravel 8 具象狀態傳輸應用程式介面回應建構器
+# Laravel 10 具象狀態傳輸應用程式介面回應建構器
 
-引入 MarcinOrlowski 的 laravel-api-response-builder 套件來擴增實作一組實現效率、可讀性、還有可擴展分散式系統的軟體架構設計規範，符合具象狀態傳輸原則的系統有五個主要特性/限制：伺服器/客戶端分離、無狀態、可快取、分層、統一操作介面。
+引入 marcin-orlowski 的 laravel-api-response-builder 套件來擴增實作一組實現效率、可讀性、還有可擴展分散式系統的軟體架構設計規範，符合具象狀態傳輸原則的系統有五個主要特性/限制：伺服器/客戶端分離、無狀態、可快取、分層、統一操作介面。
 
 ## 使用方式
 - 把整個專案複製一份到你的電腦裡，這裡指的「內容」不是只有檔案，而是指所有整個專案的歷史紀錄、分支、標籤等內容都會複製一份下來。
@@ -12,7 +12,7 @@ $ git clone
 ```sh
 $ composer install
 ```
-- 產⽣ Laravel 要使用的一組 32 字元長度的隨機字串 APP_KEY 並存在 .env 內。
+- 產生 Laravel 要使用的一組 32 字元長度的隨機字串 APP_KEY 並存在 .env 內。
 ```sh
 $ php artisan key:generate
 ```
@@ -29,8 +29,8 @@ $ php artisan passport:install
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/JtJDfDr.png)
+![](https://i.imgur.com/ElZZUhf.png)
 > 傳送 HTML 表單資料註冊建立使用者
 
-![](https://i.imgur.com/vbk4CTv.png)
+![](https://i.imgur.com/3ZGikZm.png)
 > 傳送 HTML 表單資料使用建立使用者來做登入
