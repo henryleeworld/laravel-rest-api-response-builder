@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers\Api;
 
-use Illuminate\Http\Request;
 use App\Http\Controllers\Controller as Controller;
+use Illuminate\Http\JsonResponse;
 use MarcinOrlowski\ResponseBuilder\ResponseBuilder;
 use Symfony\Component\HttpFoundation\Response;
 
@@ -11,13 +11,12 @@ class BaseController extends Controller
 {
     /**
      * success response method.
-     *
-     * @return \Illuminate\Http\Response
      */
-    public function sendResponse($result)
+    public function sendResponse($result = null, string $message = null): JsonResponse
     {
         return ResponseBuilder::asSuccess(Response::HTTP_OK)
                ->withData($result)
+               ->withMessage($message)
                ->withHttpCode(Response::HTTP_OK)
                ->build();
     }
@@ -25,12 +24,10 @@ class BaseController extends Controller
 
     /**
      * return error response.
-     *
-     * @return \Illuminate\Http\Response
      */
-    public function sendError($error, $errorMessages = [], $code = Response::HTTP_NOT_FOUND)
+    public function sendError($errorMessages = [], int $code = Response::HTTP_NOT_FOUND): JsonResponse
     {
-        if(!empty($errorMessages)){
+        if (!empty($errorMessages)) {
             $response['data'] = $errorMessages;
         }
 
