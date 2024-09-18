@@ -6,7 +6,7 @@
     "license": "MIT",
     "require": {
         "php": "^8.2",
-        "laravel/framework": "^11.10",
+        "laravel/framework": "^11.12",
         "laravel/sanctum": "^4.0",
         "laravel/tinker": "^2.9",
         "marcin-orlowski/laravel-api-response-builder": "^11.0"
@@ -14,7 +14,7 @@
     "require-dev": {
         "fakerphp/faker": "^1.23",
         "laravel/pint": "^1.16",
-        "laravel/sail": "^1.29",
+        "laravel/sail": "^1.30",
         "mockery/mockery": "^1.6",
         "nunomaduro/collision": "^8.1",
         "phpunit/phpunit": "^11.2"
