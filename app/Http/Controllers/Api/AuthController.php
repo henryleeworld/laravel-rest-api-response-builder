@@ -12,7 +12,7 @@ use Illuminate\Validation\Rules;
 class AuthController extends BaseController
 {
     /**
-     * Register api
+     * Handle an register attempt.
      */
     public function register(Request $request): JsonResponse
     {
@@ -33,7 +33,7 @@ class AuthController extends BaseController
     }
    
     /**
-     * Login api
+     * Handle an login attempt.
      */
     public function login(Request $request): JsonResponse
     {
@@ -53,7 +53,7 @@ class AuthController extends BaseController
     }
 
     /**
-     * Logout api
+     * Log the user out of the application.
      */
     public function logout(): JsonResponse
     {

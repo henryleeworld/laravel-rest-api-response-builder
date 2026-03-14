@@ -1,4 +1,4 @@
-# Laravel 11 具象狀態傳輸應用程式介面回應建構器
+# Laravel 12 具象狀態傳輸應用程式介面回應建構器
 
 引入 marcin-orlowski 的 laravel-api-response-builder 套件來擴增實作一組實現效率、可讀性、還有可擴展分散式系統的軟體架構設計規範，符合具象狀態傳輸原則的系統有五個主要特性/限制：伺服器/客戶端分離、無狀態、可快取、分層、統一操作介面。
 
@@ -25,11 +25,11 @@ $ php artisan migrate
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/aiEk4PI.png)
+![](https://i.imgur.com/vNs25Mb.png)
 > 傳送 HTML 表單資料註冊建立使用者
 
-![](https://i.imgur.com/SP5p5UO.png)
+![](https://i.imgur.com/tz35zbv.png)
 > 傳送 HTML 表單資料使用建立使用者來做登入
 
-![](https://i.imgur.com/mF1XAKW.png)
+![](https://i.imgur.com/kXWpC9z.png)
 > 在 Authorization 請求標頭中指定存取權杖作為憑證令牌來做登出

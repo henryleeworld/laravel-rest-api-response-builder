@@ -10,7 +10,7 @@ use Symfony\Component\HttpFoundation\Response;
 class BaseController extends Controller
 {
     /**
-     * success response method.
+     * Customize the success response.
      */
     public function sendResponse($result = null, string $message = null): JsonResponse
     {
@@ -21,9 +21,8 @@ class BaseController extends Controller
                ->build();
     }
 
-
     /**
-     * return error response.
+     * Customize the error response.
      */
     public function sendError($errorMessages = [], int $code = Response::HTTP_NOT_FOUND): JsonResponse
     {
